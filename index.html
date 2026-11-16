@@ -3,20 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>La Nouvelle Glisse — Location de ski au pied des pistes, Villard-de-Lans</title>
-<meta name="description" content="Location de skis, snowboards, raquettes et vélo-ski à Villard-de-Lans, Côte 2000, sous la télécabine du Pré des Preys. Réservez votre matériel en ligne.">
+<title>Magasin SPORT — Leysin, Alpes vaudoises</title>
+<meta name="description" content="Magasin de sport au cœur du village de Leysin : ski, snowboard, vêtements, casques, sacs à dos et vélos/VTT en été.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&display=swap" rel="stylesheet">
-<script>
-  /* Si une photo locale (dossier images/) est absente, on charge la version en ligne. */
-  window.addEventListener('error', function (e) {
-    var t = e.target;
-    if (t && t.tagName === 'IMG' && t.dataset.remote && t.src !== t.dataset.remote) {
-      t.src = t.dataset.remote;
-    }
-  }, true);
-</script>
 <style>
   :root {
     --neige: #F4F6F7;
@@ -301,7 +292,7 @@
 
 <header class="entete" id="entete">
   <div class="wrap">
-    <a href="#accueil" class="marque">La <b>N</b>ouvelle <b>G</b>lisse</a>
+    <a href="#accueil" class="marque">Magasin <b>SPORT</b></a>
     <button class="bouton-menu" id="bouton-menu" aria-expanded="false" aria-controls="nav">Menu</button>
     <nav class="nav" id="nav" aria-label="Navigation principale">
       <a href="#packs">Location</a>
@@ -317,11 +308,11 @@
 
   <section class="accueil" id="accueil" style="padding:0">
     <div class="fond">
-      <img src="images/vercors.jpg" data-remote="http://www.lanouvelleglisse.com/img/squelette/bgHeader.jpg" alt="Sommets enneigés du Vercors et forêt de sapins" fetchpriority="high">
+      <img src="images/banniere-montagne.jpg" alt="Paysage de montagne enneigé et forêt de sapins" fetchpriority="high">
     </div>
     <div class="wrap contenu">
-      <h1>Louez au pied des pistes.</h1>
-      <p class="sous">Skis, snowboards, raquettes et vélo-ski à Villard-de-Lans. Le magasin est sous la télécabine du Pré des Preys, à 10 mètres de l'arrivée des navettes.</p>
+      <h1>Le sport au cœur du village.</h1>
+      <p class="sous">Magasin SPORT vous accueille à Leysin, dans les Alpes vaudoises, été comme hiver : ski, snowboard, vêtements, casques, sacs à dos, vélos et VTT.</p>
       <form class="acces-rapide" id="acces-rapide" aria-label="Commencer une réservation">
         <div>
           <label for="ar-date">Premier jour</label>
@@ -354,9 +345,9 @@
   <div class="bandeau-atouts">
     <div class="wrap">
       <ul>
-        <li>Ouvert tous les jours de la saison, 8 h 30 – 17 h 30</li>
-        <li>Matériel renouvelé chaque année</li>
-        <li>−25 % à la semaine hors vacances scolaires</li>
+        <li>Au cœur du village de Leysin</li>
+        <li>Ouvert été comme hiver</li>
+        <li>−25 % à la semaine hors périodes de vacances</li>
         <li>−10 % pour les groupes dès 10 personnes</li>
       </ul>
     </div>
@@ -365,13 +356,13 @@
   <section class="pourquoi" id="pourquoi">
     <div class="wrap">
       <div class="titre-section">
-        <h2>Le magasin le plus proche des pistes</h2>
-        <p>Vous chaussez, vous sortez, vous êtes sur la neige. Et en fin de journée, vous déposez votre matériel en descendant de la télécabine.</p>
+        <h2>Au cœur du village de Leysin</h2>
+        <p>Notre équipe vous accueille au village et vous conseille pour préparer vos journées sur le domaine de Leysin – Les Mosses – La Lécherette, avec environ 100 km de pistes et le téléphérique de la Berneuse.</p>
       </div>
       <div class="atouts">
         <article>
           <h3>Du matériel récent</h3>
-          <p>La Nouvelle Glisse investit chaque année dans son parc de location : Head, Dynastar, Rossignol, Nordica, Salomon.</p>
+          <p>Retrouvez en magasin les marques Burton et Scott pour vous équiper en montagne.</p>
         </article>
         <article>
           <h3>Un atelier bien équipé</h3>
@@ -399,15 +390,14 @@
       <div class="grille-packs" id="grille-packs" role="tabpanel"></div>
 
       <div class="veloski">
-        <div class="photo"><img src="images/plateau.jpg" data-remote="http://www.lanouvelleglisse.com/img/accueil/bgLienLocation.jpg" alt="Plateau enneigé et forêt du Vercors" loading="lazy"></div>
+        <div class="photo"><img src="images/paysage-hiver.jpg" alt="Paysage de montagne enneigé et forêt en hiver" loading="lazy"></div>
         <div class="texte">
-          <span class="badge">Unique à Villard-de-Lans</span>
           <h3>Le vélo-ski</h3>
           <p>Un VTT tout suspendu monté sur skis, pour prolonger le plaisir du vélo en hiver. Facile à prendre en main, quel que soit votre niveau de ski.</p>
           <div class="tarif-veloski">
-            <div><strong>34 €</strong>½ journée avec bottes</div>
-            <div><strong>44 €</strong>1 jour avec bottes</div>
-            <div><strong>88 €</strong>2 jours avec bottes</div>
+            <div><strong>CHF 30.–</strong>½ journée avec bottes</div>
+            <div><strong>CHF 40.–</strong>1 jour avec bottes</div>
+            <div><strong>CHF 85.–</strong>2 jours avec bottes</div>
           </div>
           <a href="#reserver" class="btn btn-rouge" data-ajout="veloski">Réserver un vélo-ski</a>
         </div>
@@ -475,8 +465,7 @@
                 <div><label for="c-prenom">Prénom</label><input class="champ" id="c-prenom" autocomplete="given-name" required></div>
                 <div><label for="c-nom">Nom</label><input class="champ" id="c-nom" autocomplete="family-name" required></div>
               </div>
-              <div class="ligne-champs ligne-2" style="grid-template-columns:1fr 1fr; margin-top:12px">
-                <div><label for="c-email">E-mail</label><input class="champ" id="c-email" type="email" autocomplete="email" required></div>
+              <div class="ligne-champs ligne-2" style="grid-template-columns:1fr; margin-top:12px">
                 <div><label for="c-tel">Téléphone</label><input class="champ" id="c-tel" type="tel" autocomplete="tel" required></div>
               </div>
               <div class="bloc-champ" style="margin-top:12px">
@@ -512,13 +501,13 @@
   <section class="tarifs" id="tarifs">
     <div class="wrap">
       <div class="titre-section">
-        <h2>Tarifs 2025 / 2026</h2>
-        <p>Prix en euros, par personne. La demi-journée du matin va jusqu'à 13 h, celle de l'après-midi commence à 12 h 30.</p>
+        <h2>Tarifs</h2>
+        <p>Prix en francs suisses (CHF), par personne. Les horaires de retrait suivent les heures d’ouverture du magasin.</p>
       </div>
       <div class="onglets" role="tablist" aria-label="Catégorie de tarifs" id="onglets-tarifs"></div>
       <div class="table-tarifs-wrap" role="tabpanel"><table class="tarifs-table" id="table-tarifs"></table></div>
       <div class="bons-plans">
-        <div class="bon-plan"><strong>−25 %</strong><p>Sur toute location à la semaine hors vacances scolaires, toutes zones confondues.</p></div>
+        <div class="bon-plan"><strong>−25 %</strong><p>Sur toute location à la semaine hors périodes de vacances.</p></div>
         <div class="bon-plan"><strong>−10 %</strong><p>Pour les groupes à partir de 10 personnes, sur tous les tarifs et toute la saison, vacances comprises.</p></div>
       </div>
       <details class="cgl" id="conditions">
@@ -531,24 +520,25 @@
   <section class="magasin" id="magasin">
     <div class="wrap grille">
       <div class="mosaique">
-        <img src="images/magasin-1.jpg" data-remote="http://www.lanouvelleglisse.com/img/squelette/imgDecoFooter-1.jpg" alt="Le comptoir de location et le mur d'accessoires" loading="lazy">
-        <img src="images/magasin-3.jpg" data-remote="http://www.lanouvelleglisse.com/img/squelette/imgDecoFooter-3.jpg" alt="Les râteliers de skis de location" loading="lazy">
-        <img src="images/magasin-4.jpg" data-remote="http://www.lanouvelleglisse.com/img/squelette/imgDecoFooter-4.jpg" alt="L'espace location aux poutres en bois" loading="lazy">
+        <img src="images/magasin-1.jpg" alt="Comptoir et accessoires dans un magasin de sport" loading="lazy">
+        <img src="images/magasin-3.jpg" alt="Équipements de ski présentés en magasin" loading="lazy">
+        <img src="images/magasin-4.jpg" alt="Casques, accessoires et comptoir du magasin" loading="lazy">
       </div>
       <div class="texte">
         <h2 style="margin-bottom:24px">Une boutique à l'ambiance montagne</h2>
-        <p>Anne-Marie et son équipe vous accueillent dans un magasin chaleureux, au pied des pistes de la Côte 2000. Ils vous conseillent sur le choix de votre équipement, puis sur l'entretien et la réparation de vos skis personnels.</p>
+        <p>Notre équipe vous accueille au cœur du village de Leysin et vous conseille dans le choix de votre équipement. En été, retrouvez également des vélos et VTT pour profiter de la région.</p>
         <div class="marques" aria-label="Marques proposées">
-          <span>HEAD</span><span>DYNASTAR</span><span>ROSSIGNOL</span><span>NORDICA</span><span>SALOMON</span>
+          <span>BURTON</span><span>SCOTT</span>
         </div>
         <h3>Aussi en vente au magasin</h3>
         <ul class="vente">
           <li>Lunettes et masques</li>
+          <li>Vêtements de sport</li>
           <li>Bonnets, bandeaux, gants</li>
-          <li>Casques et protections dorsales</li>
+          <li>Casques et protections</li>
           <li>Bâtons</li>
-          <li>Sacs à dos, sacs à chaussures</li>
-          <li>Ceintures Skimp</li>
+          <li>Sacs à dos</li>
+          <li>Vélos et VTT en été</li>
         </ul>
       </div>
     </div>
@@ -559,16 +549,15 @@
       <div>
         <h2>Nous trouver</h2>
         <dl>
-          <div><dt>Téléphone</dt><dd><a class="tel" href="tel:+33476941070">04 76 94 10 70</a></dd></div>
-          <div><dt>Adresse</dt><dd>2366 route de la Côte 2000<br>38250 Villard-de-Lans</dd></div>
-          <div><dt>Repère</dt><dd>Sous la gare de départ de la télécabine du Pré des Preys, à 10 mètres de l'arrivée des navettes.</dd></div>
-          <div><dt>Horaires</dt><dd>Tous les jours, de l'ouverture à la fermeture de la station<br>8 h 30 – 17 h 30</dd></div>
-          <div><dt>E-mail</dt><dd><a href="mailto:lanouvelleglisse@gmail.com">lanouvelleglisse@gmail.com</a></dd></div>
+          <div><dt>Téléphone</dt><dd><a class="tel" href="tel:+41793583716">+41 79 358 37 16</a></dd></div>
+          <div><dt>Adresse</dt><dd>Avenue Secrétan 1<br>1854 Leysin, Suisse</dd></div>
+          <div><dt>Repère</dt><dd>Au cœur du village de Leysin, dans les Alpes vaudoises.</dd></div>
+          <div><dt>Horaires</dt><dd>Lundi : 9 h – 12 h et 13 h 30 – 18 h 30<br>Mardi à vendredi : 9 h – 18 h 30<br>Samedi : 9 h – 17 h<br>Dimanche : [À CONFIRMER]</dd></div>
         </dl>
       </div>
       <div class="carte-geo">
-        <iframe title="Plan d'accès à La Nouvelle Glisse, Villard-de-Lans" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-          src="https://maps.google.com/maps?q=La%20Nouvelle%20Glisse%2C%202366%20Route%20de%20la%20C%C3%B4te%202000%2C%2038250%20Villard-de-Lans&z=14&output=embed"></iframe>
+        <iframe title="Plan d'accès au Magasin SPORT, Leysin" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://maps.google.com/maps?q=Magasin%20SPORT%2C%20Avenue%20Secr%C3%A9tan%201%2C%201854%20Leysin&z=14&output=embed"></iframe>
       </div>
     </div>
   </section>
@@ -577,7 +566,7 @@
 
 <footer class="pied">
   <div class="wrap">
-    <p>© 2026 La Nouvelle Glisse, Villard-de-Lans</p>
+    <p>© 2026 Magasin SPORT, Leysin</p>
     <p>Réservation en ligne : version de démonstration, aucune donnée n'est envoyée.</p>
   </div>
 </footer>
@@ -590,21 +579,21 @@
      Chaque tableau : [½ j, 1 j, 2 j, 3 j, 4 j, 5 j, 6 j]           */
   var T = {
     pack: {
-      baby: [8, 10, 20, 27, 33, 39, 45], junior: [10, 12, 24, 35, 46, 56, 65], competition: [12, 15, 30, 43, 55, 65, 75],
-      bronze: [16, 21, 42, 60, 75, 88, 100], argent: [19, 25, 50, 70, 89, 106, 120], or: [22, 29, 58, 82, 103, 123, 140], diamant: [25, 33, 66, 90, 114, 138, 160]
+      baby: [10, 10, 20, 25, 30, 35, 40], junior: [10, 10, 25, 35, 45, 55, 60], competition: [10, 15, 30, 40, 50, 60, 70],
+      bronze: [15, 20, 40, 55, 70, 85, 95], argent: [20, 25, 45, 65, 85, 100, 115], or: [20, 25, 55, 75, 95, 115, 130], diamant: [25, 30, 60, 85, 105, 130, 150]
     },
     skis: {
-      baby: [5, 6, 10, 15, 20, 24, 27], junior: [6, 8, 16, 22, 28, 33, 38], competition: [7, 10, 18, 26, 34, 41, 47],
-      bronze: [13, 16, 32, 46, 59, 71, 80], argent: [15, 19, 38, 55, 72, 87, 100], or: [17, 23, 46, 66, 85, 103, 118], diamant: [19, 26, 52, 74, 95, 114, 133]
+      baby: [5, 5, 10, 15, 20, 25, 25], junior: [5, 10, 15, 20, 25, 30, 35], competition: [5, 10, 15, 25, 30, 40, 45],
+      bronze: [10, 15, 30, 45, 55, 65, 75], argent: [15, 20, 35, 50, 70, 80, 95], or: [15, 20, 45, 60, 80, 95, 110], diamant: [20, 25, 50, 70, 90, 105, 125]
     },
-    snowPack: { enfant: [12, 16, 32, 44, 55, 65, 73], adulte: [20, 26, 52, 72, 90, 107, 120] },
-    snow: { enfant: [8, 11, 20, 29, 39, 47, 55], adulte: [14, 18, 36, 52, 66, 82, 95] },
-    chaussures: { baby: [3, 5, 9, 13, 16, 19, 21], junior: [5, 6, 12, 17, 22, 26, 29], adulte: [10, 14, 28, 40, 52, 62, 70] },
-    batons: [5, 5, 8, 10, 12, 14, 15],
-    luge: [3, 5, 8, 10, 13, 16, 18],
-    raquettes: [7, 10, 17, 22, 27, 31, 35],
-    casque: [3, 5, 7, 10, 13, 16, 18],
-    veloski: { sans: [29, 39, 78], avec: [34, 44, 88] }
+    snowPack: { enfant: [10, 15, 30, 40, 50, 60, 70], adulte: [20, 25, 50, 70, 85, 100, 115] },
+    snow: { enfant: [10, 10, 20, 25, 35, 45, 50], adulte: [15, 15, 35, 50, 60, 75, 90] },
+    chaussures: { baby: [5, 5, 10, 10, 15, 20, 20], junior: [5, 5, 10, 15, 20, 25, 25], adulte: [10, 15, 25, 40, 50, 60, 65] },
+    batons: [5, 5, 10, 10, 10, 15, 15],
+    luge: [5, 5, 10, 10, 10, 15, 15],
+    raquettes: [5, 10, 15, 20, 25, 30, 35],
+    casque: [5, 5, 5, 10, 10, 15, 15],
+    veloski: { sans: [25, 35, 75], avec: [30, 40, 85] }
   };
 
   var GAMMES = {
@@ -624,7 +613,7 @@
   var CGL = [
     "Une empreinte bancaire est faite pour la caution ; à défaut, une pièce d'identité est demandée.",
     'La location est payable lors de la prise en charge du matériel.',
-    "Demi-journée : le matin jusqu'à 13 h, l'après-midi à partir de 12 h 30.",
+    "Les heures de retrait d'une demi-journée suivent les horaires d'ouverture du magasin.",
     'Le tarif dégressif s’applique uniquement aux journées entières et consécutives.',
     'Le matériel loué est placé sous la responsabilité du locataire.',
     "Le matériel n'est pas assuré contre la perte, le vol ou la casse. Une garantie casse est proposée en caisse.",
@@ -632,7 +621,7 @@
     "Les dégâts résultant d'un usage anormal sont facturés au tarif de l'atelier."
   ];
 
-  /* Vacances scolaires 2026/2027, toutes zones confondues (à mettre à jour chaque saison) */
+  /* Périodes de vacances (à valider selon le calendrier local chaque saison) */
   var VACANCES = [['2026-12-19', '2027-01-04'], ['2027-02-06', '2027-03-08'], ['2027-04-03', '2027-05-03']];
 
   var DUREES = [
@@ -649,7 +638,11 @@
   /* ================= Outils ================= */
   function $(s, c) { return (c || document).querySelector(s); }
   function $$(s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); }
-  function euros(n) { return (Math.round(n * 100) / 100).toLocaleString('fr-FR', { minimumFractionDigits: n % 1 ? 2 : 0, maximumFractionDigits: 2 }) + ' €'; }
+  var formatteurCHF = new Intl.NumberFormat('fr-CH', { style: 'currency', currency: 'CHF', minimumFractionDigits: 0, maximumFractionDigits: 0 });
+  function francs(n) {
+    var montant = formatteurCHF.formatToParts(Math.round(n)).filter(function (p) { return p.type === 'integer' || p.type === 'group'; }).map(function (p) { return p.value; }).join('');
+    return 'CHF ' + montant + '.–';
+  }
   function echappe(s) { return String(s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
   function isoLocal(d) { return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); }
   function versDate(iso) { var p = iso.split('-'); return new Date(+p[0], +p[1] - 1, +p[2]); }
@@ -707,17 +700,17 @@
     var remise = null, d = duree();
     if (etat.skieurs.length >= 10) remise = { taux: 0.10, nom: 'Groupe de 10 personnes et plus' };
     if (d.v === '6' && etat.date && !chevaucheVacances(etat.date, 6)) {
-      if (!remise || remise.taux < 0.25) remise = { taux: 0.25, nom: 'Semaine hors vacances scolaires' };
+      if (!remise || remise.taux < 0.25) remise = { taux: 0.25, nom: 'Semaine hors périodes de vacances' };
     }
-    var montantRemise = remise ? Math.round(brut * remise.taux * 100) / 100 : 0;
-    return { details: details, brut: brut, remise: remise, montantRemise: montantRemise, total: brut - montantRemise };
+    var montantRemise = remise ? Math.round(brut * remise.taux) : 0;
+    return { details: details, brut: brut, remise: remise, montantRemise: montantRemise, total: Math.round(brut - montantRemise) };
   }
 
   function texteDates() {
     if (!etat.date) return '';
     var d = duree(), a = versDate(etat.date);
-    if (d.v === 'am') return dateLongue(a) + ', le matin (jusqu’à 13 h)';
-    if (d.v === 'pm') return dateLongue(a) + ', l’après-midi (dès 12 h 30)';
+    if (d.v === 'am') return dateLongue(a) + ', le matin';
+    if (d.v === 'pm') return dateLongue(a) + ', l’après-midi';
     if (d.jours === 1) return dateLongue(a) + ', la journée';
     return 'Du ' + dateLongue(a) + ' au ' + dateLongue(ajouteJours(a, d.jours - 1));
   }
@@ -741,11 +734,11 @@
     var html = '<h3>Votre réservation</h3><p class="periode">' + (etat.date ? echappe(texteDates()) : 'Dates à choisir') + '</p><ul>';
     etat.skieurs.forEach(function (s, k) {
       var r = c.details[k];
-      html += '<li><span>' + echappe(s.prenom || ('Personne ' + (k + 1))) + '<small>' + echappe(resumeSkieur(s)) + '</small></span><span>' + (r.indispo ? '—' : euros(r.total)) + '</span></li>';
+      html += '<li><span>' + echappe(s.prenom || ('Personne ' + (k + 1))) + '<small>' + echappe(resumeSkieur(s)) + '</small></span><span>' + (r.indispo ? '—' : francs(r.total)) + '</span></li>';
     });
     html += '</ul>';
-    if (c.remise) html += '<ul><li class="remise"><span>' + echappe(c.remise.nom) + '<small>−' + Math.round(c.remise.taux * 100) + ' %</small></span><span>−' + euros(c.montantRemise) + '</span></li></ul>';
-    html += '<div class="total"><span>Total</span><strong id="total-montant">' + euros(c.total) + '</strong></div>';
+    if (c.remise) html += '<ul><li class="remise"><span>' + echappe(c.remise.nom) + '<small>−' + Math.round(c.remise.taux * 100) + ' %</small></span><span>−' + francs(c.montantRemise) + '</span></li></ul>';
+    html += '<div class="total"><span>Total</span><strong id="total-montant">' + francs(c.total) + '</strong></div>';
     html += '<p class="paiement">Rien à payer en ligne : vous réglez au magasin en récupérant le matériel. ' + (d.idx === 0 ? 'Location à la demi-journée.' : d.jours + ' jour' + (d.jours > 1 ? 's' : '') + ' de location.') + '</p>';
     $('#recap').innerHTML = html;
     if (dernierTotal !== null && dernierTotal !== c.total) $('#total-montant').classList.add('flash');
@@ -762,7 +755,7 @@
     var p = $('#r-rappel');
     if (!etat.date) { p.textContent = 'Choisissez une date pour voir vos dates de location.'; return; }
     var t = texteDates();
-    if (duree().v === '6') t += chevaucheVacances(etat.date, 6) ? ' (période de vacances scolaires)' : ' : −25 % appliqués, hors vacances scolaires';
+    if (duree().v === '6') t += chevaucheVacances(etat.date, 6) ? ' (période de vacances)' : ' : −25 % appliqués, hors périodes de vacances';
     p.textContent = t.charAt(0).toUpperCase() + t.slice(1);
   }
 
@@ -788,7 +781,7 @@
       if (s.formule !== 'chaussures' || s.cat === 'enfant') {
         h += '<fieldset class="groupe"><legend>Gamme</legend><div class="gammes">' + GAMMES[s.cat].filter(function (g) { return !(s.formule === 'chaussures' && g.id === 'competition'); }).map(function (g) {
           var tab = s.formule === 'pack' ? T.pack[g.id] : s.formule === 'skis' ? T.skis[g.id] : T.chaussures[g.id === 'baby' ? 'baby' : 'junior'];
-          return '<label class="gamme"><input type="radio" name="' + n + '-gam" value="' + g.id + '"' + (s.gamme === g.id ? ' checked' : '') + '><span><strong>' + g.nom + '<em style="font-style:normal">' + euros(tab[d.idx]) + '</em></strong>' + g.detail + (g.piste ? '<br><span class="piste"><i class="' + g.piste + '"></i>' + g.niveau + '</span>' : '') + '</span></label>';
+          return '<label class="gamme"><input type="radio" name="' + n + '-gam" value="' + g.id + '"' + (s.gamme === g.id ? ' checked' : '') + '><span><strong>' + g.nom + '<em style="font-style:normal">' + francs(tab[d.idx]) + '</em></strong>' + g.detail + (g.piste ? '<br><span class="piste"><i class="' + g.piste + '"></i>' + g.niveau + '</span>' : '') + '</span></label>';
         }).join('') + '</div></fieldset>';
       }
     }
@@ -806,10 +799,10 @@
         '<div><label for="' + n + '-pointure">Pointure</label><input class="champ" id="' + n + '-pointure" data-champ="pointure" inputmode="numeric" value="' + echappe(s.pointure) + '" placeholder="42"></div></div>';
     }
     h += '<fieldset class="groupe"><legend>Options</legend><div class="options">' +
-      '<label class="case"><input type="checkbox" data-option="casque"' + (s.casque ? ' checked' : '') + '> Casque (+' + euros(T.casque[d.idx]) + ')</label>' +
-      (s.activite === 'ski' && s.formule !== 'chaussures' ? '<label class="case"><input type="checkbox" data-option="batons"' + (s.batons ? ' checked' : '') + '> Bâtons (+' + euros(T.batons[d.idx]) + ')</label>' : '') +
+      '<label class="case"><input type="checkbox" data-option="casque"' + (s.casque ? ' checked' : '') + '> Casque (+' + francs(T.casque[d.idx]) + ')</label>' +
+      (s.activite === 'ski' && s.formule !== 'chaussures' ? '<label class="case"><input type="checkbox" data-option="batons"' + (s.batons ? ' checked' : '') + '> Bâtons (+' + francs(T.batons[d.idx]) + ')</label>' : '') +
       '</div></fieldset>';
-    h += '<div class="sous-total"><span>Sous-total</span><strong>' + (r.indispo ? 'Indisponible' : euros(r.total)) + '</strong></div>';
+    h += '<div class="sous-total"><span>Sous-total</span><strong>' + (r.indispo ? 'Indisponible' : francs(r.total)) + '</strong></div>';
     return h + '</article>';
   }
   function rendSkieurs() {
@@ -819,7 +812,7 @@
   function majSousTotaux() {
     etat.skieurs.forEach(function (s) {
       var el = $('.skieur[data-id="' + s.id + '"] .sous-total strong');
-      if (el) { var r = lignesSkieur(s); el.textContent = r.indispo ? 'Indisponible' : euros(r.total); }
+      if (el) { var r = lignesSkieur(s); el.textContent = r.indispo ? 'Indisponible' : francs(r.total); }
     });
   }
 
@@ -830,16 +823,19 @@
     etat.skieurs.forEach(function (s, k) {
       var r = c.details[k];
       h += '<tr><td><strong>' + echappe(s.prenom || 'Personne ' + (k + 1)) + '</strong><small>' + r.lignes.map(function (l) { return echappe(l.nom); }).join(', ') +
-        (s.taille || s.poids || s.pointure ? ' · ' + [s.taille && s.taille + ' cm', s.poids && s.poids + ' kg', s.pointure && 'pointure ' + s.pointure].filter(Boolean).map(echappe).join(', ') : '') + '</small></td><td>' + euros(r.total) + '</td></tr>';
+        (s.taille || s.poids || s.pointure ? ' · ' + [s.taille && s.taille + ' cm', s.poids && s.poids + ' kg', s.pointure && 'pointure ' + s.pointure].filter(Boolean).map(echappe).join(', ') : '') + '</small></td><td>' + francs(r.total) + '</td></tr>';
     });
-    if (c.remise) h += '<tr><td><strong>' + echappe(c.remise.nom) + '</strong></td><td>−' + euros(c.montantRemise) + '</td></tr>';
-    h += '<tr><td><strong>Total à régler au magasin</strong></td><td>' + euros(c.total) + '</td></tr></tbody></table>';
+    if (c.remise) h += '<tr><td><strong>' + echappe(c.remise.nom) + '</strong></td><td>−' + francs(c.montantRemise) + '</td></tr>';
+    h += '<tr><td><strong>Total à régler au magasin</strong></td><td>' + francs(c.total) + '</td></tr></tbody></table>';
     $('#resume-final').innerHTML = h;
 
-    var sel = $('#c-retrait'), d = duree(), opts;
-    if (d.v === 'pm') opts = ['Entre 12 h 30 et 13 h 30', 'Entre 13 h 30 et 15 h'];
-    else opts = ['Dès l’ouverture, 8 h 30 – 9 h 30', 'Entre 9 h 30 et 11 h', 'Entre 11 h et 13 h', 'L’après-midi, avant 17 h'];
-    if (d.v === 'am') opts = opts.slice(0, 3);
+    var sel = $('#c-retrait'), d = duree(), jour = versDate(etat.date).getDay(), opts;
+    if (jour === 0) opts = ['Dimanche : horaires à confirmer'];
+    else if (jour === 1) opts = ['Matin, 9 h – 10 h', 'Matin, 10 h – 12 h', 'Après-midi, 13 h 30 – 15 h', 'Après-midi, 15 h – 18 h 30'];
+    else if (jour === 6) opts = ['Matin, 9 h – 10 h 30', 'Matin, 10 h 30 – 12 h', 'Après-midi, 13 h – 15 h', 'Après-midi, 15 h – 17 h'];
+    else opts = ['Matin, 9 h – 10 h 30', 'Matin, 10 h 30 – 12 h', 'Après-midi, 12 h – 15 h', 'Après-midi, 15 h – 18 h 30'];
+    if (jour !== 0 && d.v === 'am') opts = opts.filter(function (o) { return o.indexOf('Matin,') === 0; });
+    if (jour !== 0 && d.v === 'pm') opts = opts.filter(function (o) { return o.indexOf('Après-midi,') === 0; });
     sel.innerHTML = opts.map(function (o) { return '<option>' + o + '</option>'; }).join('');
   }
 
@@ -922,12 +918,11 @@
   /* Étape 3 : envoi (simulé) */
   $('#form-contact').addEventListener('submit', function (e) {
     e.preventDefault();
-    var champs = ['c-prenom', 'c-nom', 'c-email', 'c-tel'], vide = champs.filter(function (id) { return !$('#' + id).value.trim(); });
-    if (vide.length) { erreur(3, 'Renseignez votre prénom, votre nom, votre e-mail et votre téléphone.'); $('#' + vide[0]).focus(); return; }
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test($('#c-email').value.trim())) { erreur(3, 'Cette adresse e-mail ne semble pas valide. Vérifiez-la.'); $('#c-email').focus(); return; }
+    var champs = ['c-prenom', 'c-nom', 'c-tel'], vide = champs.filter(function (id) { return !$('#' + id).value.trim(); });
+    if (vide.length) { erreur(3, 'Renseignez votre prénom, votre nom et votre téléphone.'); $('#' + vide[0]).focus(); return; }
     if (!$('#c-cgl').checked) { erreur(3, 'Cochez la case pour accepter les conditions générales de location.'); $('#c-cgl').focus(); return; }
     erreur(3);
-    var c = calcul(), num = 'LNG-' + String(Math.floor(10000 + Math.random() * 89999));
+    var c = calcul(), num = 'SPORT-' + String(Math.floor(10000 + Math.random() * 89999));
     var prenom = $('#c-prenom').value.trim();
     $('#etape-4').innerHTML =
       '<div class="coche" aria-hidden="true"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>' +
@@ -935,7 +930,7 @@
       '<p>Votre matériel sera prêt au magasin, ' + echappe(texteDates().charAt(0).toLowerCase() + texteDates().slice(1)) + '.</p>' +
       '<div class="numero">' + num + '</div>' +
       '<p class="bandeau-demo">Démonstration : cette réservation n’a pas été envoyée au magasin.</p>' +
-      '<p><strong>' + euros(c.total) + '</strong> à régler au magasin, pour ' + etat.skieurs.length + ' personne' + (etat.skieurs.length > 1 ? 's' : '') + '. Retrait : ' + echappe($('#c-retrait').value.toLowerCase()) + '.</p>' +
+      '<p><strong>' + francs(c.total) + '</strong> à régler au magasin, pour ' + etat.skieurs.length + ' personne' + (etat.skieurs.length > 1 ? 's' : '') + '. Retrait : ' + echappe($('#c-retrait').value.toLowerCase()) + '.</p>' +
       '<div class="liste-prevoir"><h4>À prévoir le jour du retrait</h4><ul><li>Votre numéro de réservation</li><li>Une carte bancaire pour l’empreinte de caution, ou une pièce d’identité</li><li>Des chaussettes de ski, pour l’essayage des chaussures</li></ul></div>' +
       '<button type="button" class="btn btn-ligne" id="nouvelle-resa">Faire une autre réservation</button>';
     allerA(4);
@@ -968,13 +963,13 @@
     if (type === 'snow') {
       html = [['enfant', 'Snowboard enfant', 'Planche et boots adaptées aux plus jeunes riders.'], ['adulte', 'Snowboard adulte', 'Planche et boots, pour débuter comme pour progresser.']].map(function (p) {
         var t = T.snowPack[p[0]];
-        return '<article class="carte-pack"><span class="piste"><i class="neutre"></i>Planche + boots</span><h3>' + p[1] + '</h3><p class="pour">' + p[2] + '</p><div class="prix"><strong>' + euros(t[1]) + '</strong><span>la journée<br>' + euros(t[6]) + ' les 6 jours</span></div><a href="#reserver" class="btn btn-ligne" data-ajout="snow-' + p[0] + '">Réserver ce pack</a></article>';
+        return '<article class="carte-pack"><span class="piste"><i class="neutre"></i>Planche + boots</span><h3>' + p[1] + '</h3><p class="pour">' + p[2] + '</p><div class="prix"><strong>' + francs(t[1]) + '</strong><span>la journée<br>' + francs(t[6]) + ' les 6 jours</span></div><a href="#reserver" class="btn btn-ligne" data-ajout="snow-' + p[0] + '">Réserver ce pack</a></article>';
       }).join('');
     } else {
       html = GAMMES[type].map(function (g) {
         var t = T.pack[g.id];
         return '<article class="carte-pack">' + (g.piste ? '<span class="piste"><i class="' + g.piste + '"></i>' + g.niveau + '</span>' : '<span class="piste"><i class="neutre"></i>Enfant</span>') +
-          '<h3>' + g.nom + '</h3><p class="pour">' + g.detail + '</p><div class="prix"><strong>' + euros(t[1]) + '</strong><span>la journée<br>' + euros(t[6]) + ' les 6 jours</span></div><a href="#reserver" class="btn btn-ligne" data-ajout="ski-' + type + '-' + g.id + '">Réserver ce pack</a></article>';
+          '<h3>' + g.nom + '</h3><p class="pour">' + g.detail + '</p><div class="prix"><strong>' + francs(t[1]) + '</strong><span>la journée<br>' + francs(t[6]) + ' les 6 jours</span></div><a href="#reserver" class="btn btn-ligne" data-ajout="ski-' + type + '-' + g.id + '">Réserver ce pack</a></article>';
       }).join('');
     }
     $('#grille-packs').innerHTML = html;
@@ -1012,7 +1007,7 @@
     var cols = id === 'veloski' ? ['½ j', '1 j', '2 j'] : ['½ j', '1 j', '2 j', '3 j', '4 j', '5 j', '6 j'];
     var h = '<thead><tr><th scope="col">' + o.nom + '</th>' + cols.map(function (c) { return '<th scope="col">' + c + '</th>'; }).join('') + '</tr></thead><tbody>';
     o.lignes().forEach(function (l) {
-      h += '<tr><td><strong>' + l[0] + '</strong>' + (l[1] ? '<small>' + l[1] + '</small>' : '') + '</td>' + l[2].map(function (p) { return '<td>' + euros(p) + '</td>'; }).join('') + '</tr>';
+      h += '<tr><td><strong>' + l[0] + '</strong>' + (l[1] ? '<small>' + l[1] + '</small>' : '') + '</td>' + l[2].map(function (p) { return '<td>' + francs(p) + '</td>'; }).join('') + '</tr>';
     });
     $('#table-tarifs').innerHTML = h + '</tbody>';
   }
