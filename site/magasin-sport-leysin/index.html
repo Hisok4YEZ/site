@@ -96,12 +96,12 @@
   @media (max-width: 480px) { .acces-rapide { grid-template-columns: 1fr; } }
   @media (prefers-reduced-motion: no-preference) {
     .accueil .fond img { animation: zoom 14s ease-out both; }
-    .accueil h1 { animation: glisse 1s .15s cubic-bezier(.2, .7, .1, 1) both; }
+    .accueil h1 { animation: entree-titre 1s .15s cubic-bezier(.2, .7, .1, 1) both; }
     .accueil .sous, .accueil .actions-accueil { animation: apparait .8s .55s ease both; }
     .acces-rapide { animation: monte .9s .7s cubic-bezier(.2, .7, .1, 1) both; }
   }
   @keyframes zoom { from { transform: scale(1.08); } to { transform: scale(1); } }
-  @keyframes glisse { from { opacity: 0; transform: translateX(-40px); } to { opacity: 1; transform: none; } }
+  @keyframes entree-titre { from { opacity: 0; transform: translateX(-40px); } to { opacity: 1; transform: none; } }
   @keyframes apparait { from { opacity: 0; } to { opacity: 1; } }
   @keyframes monte { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
   .bandeau-atouts { background: var(--ardoise); color: #fff; }
@@ -366,7 +366,7 @@
         </article>
         <article>
           <h3>Un atelier bien équipé</h3>
-          <p>Affûteuse céramique Reichmann, ponceuse à pierre, farteuse : chaque ski est entretenu sur place. On soigne aussi votre matériel personnel.</p>
+          <p>Affûtage, ponçage, fartage : chaque ski est entretenu sur place. On soigne aussi votre matériel personnel.</p>
         </article>
         <article>
           <h3>Des chaussures au sec</h3>
@@ -395,9 +395,9 @@
           <h3>Le vélo-ski</h3>
           <p>Un VTT tout suspendu monté sur skis, pour prolonger le plaisir du vélo en hiver. Facile à prendre en main, quel que soit votre niveau de ski.</p>
           <div class="tarif-veloski">
-            <div><strong>CHF 30.–</strong>½ journée avec bottes</div>
-            <div><strong>CHF 40.–</strong>1 jour avec bottes</div>
-            <div><strong>CHF 85.–</strong>2 jours avec bottes</div>
+            <div><strong>CHF 32.–</strong>½ journée avec bottes</div>
+            <div><strong>CHF 41.–</strong>1 jour avec bottes</div>
+            <div><strong>CHF 83.–</strong>2 jours avec bottes</div>
           </div>
           <a href="#reserver" class="btn btn-rouge" data-ajout="veloski">Réserver un vélo-ski</a>
         </div>
@@ -557,7 +557,7 @@
       </div>
       <div class="carte-geo">
         <iframe title="Plan d'accès au Magasin SPORT, Leysin" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-          src="https://maps.google.com/maps?q=Magasin%20SPORT%2C%20Avenue%20Secr%C3%A9tan%201%2C%201854%20Leysin&z=14&output=embed"></iframe>
+          src="https://maps.google.com/maps?q=Magasin%20SPORT%2C%20Avenue%20Secr%C3%A9tan%201%2C%201854%20Leysin&z=16&output=embed"></iframe>
       </div>
     </div>
   </section>
@@ -575,32 +575,32 @@
 (function () {
   'use strict';
 
-  /* ================= Données (tarifs 2025/2026) =================
+  /* ================= Données (tarifs en CHF, à confirmer par le magasin) =================
      Chaque tableau : [½ j, 1 j, 2 j, 3 j, 4 j, 5 j, 6 j]           */
   var T = {
     pack: {
-      baby: [10, 10, 20, 25, 30, 35, 40], junior: [10, 10, 25, 35, 45, 55, 60], competition: [10, 15, 30, 40, 50, 60, 70],
-      bronze: [15, 20, 40, 55, 70, 85, 95], argent: [20, 25, 45, 65, 85, 100, 115], or: [20, 25, 55, 75, 95, 115, 130], diamant: [25, 30, 60, 85, 105, 130, 150]
+      baby: [8, 9, 19, 25, 31, 37, 42], junior: [9, 11, 23, 33, 43, 53, 61], competition: [11, 14, 28, 40, 52, 61, 71],
+      bronze: [15, 20, 39, 56, 71, 83, 94], argent: [18, 24, 47, 66, 84, 100, 113], or: [21, 27, 55, 77, 97, 116, 132], diamant: [24, 31, 62, 85, 107, 130, 150]
     },
     skis: {
-      baby: [5, 5, 10, 15, 20, 25, 25], junior: [5, 10, 15, 20, 25, 30, 35], competition: [5, 10, 15, 25, 30, 40, 45],
-      bronze: [10, 15, 30, 45, 55, 65, 75], argent: [15, 20, 35, 50, 70, 80, 95], or: [15, 20, 45, 60, 80, 95, 110], diamant: [20, 25, 50, 70, 90, 105, 125]
+      baby: [5, 6, 9, 14, 19, 23, 25], junior: [6, 8, 15, 21, 26, 31, 36], competition: [7, 9, 17, 24, 32, 39, 44],
+      bronze: [12, 15, 30, 43, 55, 67, 75], argent: [14, 18, 36, 52, 68, 82, 94], or: [16, 22, 43, 62, 80, 97, 111], diamant: [18, 24, 49, 70, 89, 107, 125]
     },
-    snowPack: { enfant: [10, 15, 30, 40, 50, 60, 70], adulte: [20, 25, 50, 70, 85, 100, 115] },
-    snow: { enfant: [10, 10, 20, 25, 35, 45, 50], adulte: [15, 15, 35, 50, 60, 75, 90] },
-    chaussures: { baby: [5, 5, 10, 10, 15, 20, 20], junior: [5, 5, 10, 15, 20, 25, 25], adulte: [10, 15, 25, 40, 50, 60, 65] },
-    batons: [5, 5, 10, 10, 10, 15, 15],
-    luge: [5, 5, 10, 10, 10, 15, 15],
-    raquettes: [5, 10, 15, 20, 25, 30, 35],
-    casque: [5, 5, 5, 10, 10, 15, 15],
-    veloski: { sans: [25, 35, 75], avec: [30, 40, 85] }
+    snowPack: { enfant: [11, 15, 30, 41, 52, 61, 69], adulte: [19, 24, 49, 68, 85, 101, 113] },
+    snow: { enfant: [8, 10, 19, 27, 37, 44, 52], adulte: [13, 17, 34, 49, 62, 77, 89] },
+    chaussures: { baby: [3, 5, 8, 12, 15, 18, 20], junior: [5, 6, 11, 16, 21, 24, 27], adulte: [9, 13, 26, 38, 49, 58, 66] },
+    batons: [5, 5, 8, 9, 11, 13, 14],
+    luge: [3, 5, 8, 9, 12, 15, 17],
+    raquettes: [7, 9, 16, 21, 25, 29, 33],
+    casque: [3, 5, 7, 9, 12, 15, 17],
+    veloski: { sans: [27, 37, 73], avec: [32, 41, 83] }
   };
 
   var GAMMES = {
     enfant: [
       { id: 'baby', nom: 'Baby', detail: 'Les tout-petits, skis de 80 à 110 cm' },
-      { id: 'junior', nom: 'Junior', detail: 'Du débutant à la 3e étoile, skis de 120 à 150 cm' },
-      { id: 'competition', nom: 'Compétition', detail: "Dès l'Étoile de bronze, skis de 120 à 160 cm" }
+      { id: 'junior', nom: 'Junior', detail: 'Du débutant au niveau intermédiaire, skis de 120 à 150 cm' },
+      { id: 'competition', nom: 'Compétition', detail: "Pour les jeunes skieurs confirmés, skis de 120 à 160 cm" }
     ],
     adulte: [
       { id: 'bronze', nom: 'Bronze', detail: 'Débutant, chasse-neige, ou mini-skis', piste: 'verte', niveau: 'Pistes vertes' },
@@ -647,8 +647,8 @@
   function isoLocal(d) { return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); }
   function versDate(iso) { var p = iso.split('-'); return new Date(+p[0], +p[1] - 1, +p[2]); }
   function ajouteJours(d, n) { var x = new Date(d); x.setDate(x.getDate() + n); return x; }
-  function dateLongue(d) { return d.toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long' }); }
-  function dateCourte(d) { return d.toLocaleDateString('fr-FR', { weekday: 'short', day: 'numeric', month: 'short' }); }
+  function dateLongue(d) { return d.toLocaleDateString('fr-CH', { weekday: 'long', day: 'numeric', month: 'long' }); }
+  function dateCourte(d) { return d.toLocaleDateString('fr-CH', { weekday: 'short', day: 'numeric', month: 'short' }); }
   function duree() { return DUREES.find(function (x) { return x.v === etat.duree; }); }
 
   /* ================= État ================= */
