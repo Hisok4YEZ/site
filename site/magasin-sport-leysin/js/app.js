@@ -68,7 +68,7 @@
   var formatteurCHF = new Intl.NumberFormat('fr-CH', { style: 'currency', currency: 'CHF', minimumFractionDigits: 0, maximumFractionDigits: 0 });
   function francs(n) {
     var montant = formatteurCHF.formatToParts(Math.round(n)).filter(function (p) { return p.type === 'integer' || p.type === 'group'; }).map(function (p) { return p.value; }).join('');
-    return 'CHF ' + montant + '.–';
+    return 'CHF ' + montant;
   }
   /* Même montant, avec la devise et le nombre dans deux balises pour la mise en forme du tableau */
   function francsHTML(n) { return francs(n).replace(/^CHF /, '<span class="chf">CHF</span> <span class="montant">') + '</span>'; }
