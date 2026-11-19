@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gollut Sports — Ovronnaz, Valais</title>
+<meta name="description" content="Gollut Sports, magasin de sport à Ovronnaz depuis 1989 : location et vente de skis, snowboards, télémarks, skis de fond et raquettes, atelier robotisé et bootfitting. Réservation en ligne avec Skiset.">
+<meta name="theme-color" content="#0F1E29">
+<meta property="og:title" content="Gollut Sports — Ovronnaz, Valais">
+<meta property="og:description" content="Gollut Sports, magasin de sport à Ovronnaz depuis 1989 : location et vente de skis, snowboards, télémarks, skis de fond et raquettes, atelier robotisé et bootfitting. Réservation en ligne avec Skiset.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_CH">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23D42A1D'/%3E%3Cpath d='M8 48l16-24 8 11 7-9 17 22z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700;9..40,800&family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>
+  /* Active les animations seulement si le navigateur les accepte. Si le script
+     d'effets ne se charge pas, la classe est retirée et tout reste visible. */
+  (function () {
+    var d = document.documentElement;
+    if ('IntersectionObserver' in window && 'requestAnimationFrame' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      d.classList.add('anim');
+      window.__secoursAnim = setTimeout(function () { d.classList.remove('anim'); }, 4000);
+    }
+  })();
+</script>
+</head>
+<body>
+
+<a class="lien-evitement" href="#contenu">Aller au contenu</a>
+<div class="progression" id="progression" aria-hidden="true"></div>
+
+<header class="entete" id="entete">
+  <div class="wrap">
+    <a href="#accueil" class="marque">Gollut <b>SPORTS</b></a>
+    <button class="bouton-menu" id="bouton-menu" aria-expanded="false" aria-controls="nav"><span class="barres" aria-hidden="true"></span><span class="txt">Menu</span></button>
+    <nav class="nav" id="nav" aria-label="Navigation principale">
+      <a href="#packs">Location</a>
+      <a href="#tarifs">Tarifs</a>
+      <a href="#ecole">École de ski</a>
+      <a href="#magasin">Le magasin</a>
+      <a href="#infos">Accès</a>
+      <a href="#reserver" class="btn btn-rouge">Réserver</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenu">
+
+  <section class="accueil" id="accueil">
+    <div class="fond">
+      <div class="parallaxe" data-parallaxe="0.28" data-accueil>
+        <img src="images/banniere-ovronnaz.webp" srcset="images/banniere-ovronnaz-1100.webp 1100w, images/banniere-ovronnaz.webp 1600w" sizes="100vw" width="1600" height="900" alt="Les pentes enneigées du domaine skiable d'Ovronnaz sous les sommets des Muverans, par grand beau temps d'hiver" fetchpriority="high" decoding="async">
+      </div>
+    </div>
+    <div class="wrap contenu">
+      <p class="surtitre">Ovronnaz · Valais</p>
+      <h1 data-mots>Votre number one <em>sur Ovronnaz.</em></h1>
+      <p class="sous">Gollut Sports vous accueille à Ovronnaz depuis 1989 : location et vente de skis, snowboards, télémarks, skis de fond et raquettes, avec un atelier robotisé pour l'entretien de votre matériel.</p>
+      <p><a href="https://www.skiset.com/station-ski/ovronnaz/magasins/gollut-sport" target="_blank" rel="noopener" class="btn btn-rouge">Réserver en ligne <span class="fl" aria-hidden="true">→</span></a></p>
+    </div>
+    <svg class="cretes" viewBox="0 0 1440 64" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path fill="currentColor" d="M0 64V40l90-22 70 16 110-30 95 26 60-12 120 28 85-34 70 20 105-28 90 30 75-14 110 26 95-36 80 22 100-18 85 24v26z"/></svg>
+  </section>
+
+  <div class="bandeau-atouts">
+    <div class="wrap">
+      <ul data-cascade>
+        <li><strong><span data-compte="1989">1989</span></strong>Depuis 1989, le plus ancien magasin de la station d'Ovronnaz</li>
+        <li><strong>−<span data-compte="10">10</span><small>%</small></strong>Sur votre location avec les cours de l'école de ski</li>
+        <li><strong><span data-compte="2">2</span><small>profs</small></strong>Professeurs de ski Swiss Snowsports depuis 42 ans</li>
+        <li><strong><span data-compte="25">25</span><small>ans</small></strong>De partenariat avec Skiset pour la location en ligne</li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="pourquoi" id="pourquoi">
+    <div class="wrap">
+      <div class="titre-section">
+        <p class="surtitre" data-reveal>Bienvenue</p>
+        <h2 data-mots>Bien plus qu'un magasin de sport</h2>
+        <p data-reveal style="--d:.15s">Gollut Sports est le plus ancien magasin de la station, à environ 1 km des pistes. L'équipe, formée de professeurs de ski, vous conseille en français, en allemand et en anglais.</p>
+      </div>
+      <div class="atouts" data-cascade>
+        <article>
+          <h3>Un atelier robotisé</h3>
+          <p>Entretien de vos skis et snowboards à l'atelier. Pour vos services de ski, déposez votre matériel la veille avant 15 h pour le lendemain.</p>
+        </article>
+        <article>
+          <h3>Des chaussures au sec</h3>
+          <p>Séchoirs à chaussures et désinfection. Bootfitting et machine pour les semelles orthopédiques, pour des chaussures à votre pied.</p>
+        </article>
+        <article>
+          <h3>Un bar œnothèque</h3>
+          <p>À l'intérieur du magasin, un bar œnothèque vous accueille pour boire un verre après une journée sur les pistes.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="packs" id="packs">
+    <div class="wrap">
+      <div class="titre-section">
+        <p class="surtitre" data-reveal>Location</p>
+        <h2 data-mots>Choisissez votre matériel</h2>
+        <p data-reveal style="--d:.15s">Skis, snowboards, télémarks, skis de fond, raquettes à neige, bâtons et casques, pour enfants et adultes. Prix pour un jour et pour six jours. Les chaussures se louent séparément (voir la grille complète).</p>
+      </div>
+      <div class="onglets" role="tablist" aria-label="Type de matériel" data-reveal>
+        <button type="button" role="tab" aria-selected="true" data-onglet="adulte">Adultes</button>
+        <button type="button" role="tab" aria-selected="false" data-onglet="enfant">Enfants</button>
+        <button type="button" role="tab" aria-selected="false" data-onglet="neige">Fond et raquettes</button>
+      </div>
+      <div class="grille-packs" id="grille-packs" role="tabpanel" data-cascade></div>
+      <noscript><p class="sans-js">Les tarifs s'affichent avec JavaScript. Vous pouvez aussi nous appeler au <a href="tel:+41273064727">+41 27 306 47 27</a>.</p></noscript>
+
+      <div class="veloski" id="atelier" data-vu>
+        <div class="photo"><div class="parallaxe" data-parallaxe="0.1"><img src="images/atelier-robotise.webp" width="1200" height="675" alt="Intérieur de la machine de l'atelier robotisé, avec ses meules qui entretiennent la semelle et les carres des skis" loading="lazy" decoding="async"></div></div>
+        <div class="texte" data-reveal="droite" style="--d:.2s">
+          <h3>Votre clinique du ski</h3>
+          <p>Atelier robotisé, bootfitting, empiècements de semelles et machine pour les semelles orthopédiques. Pour vos services de ski : la veille avant 15 h pour le lendemain.</p>
+          <div class="tarif-veloski">
+            <div><strong>dès CHF 75</strong>Grand service</div>
+            <div><strong>dès CHF 55</strong>Petit service</div>
+            <div><strong>dès CHF 50</strong>Aiguisage</div>
+          </div>
+          <a href="#tarifs" class="btn btn-rouge" data-voir-tarif="atelier">Tarifs de l'atelier <span class="fl" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reservation" id="reserver">
+    <div class="wrap">
+      <div class="titre-section">
+        <p class="surtitre" data-reveal>Réservation</p>
+        <h2 data-mots>Réservez votre matériel</h2>
+        <p data-reveal style="--d:.15s">Les locations en ligne de Gollut Sports se font avec Skiset, notre partenaire depuis 25 ans.</p>
+      </div>
+
+      <div class="resa" id="resa">
+        <div data-reveal>
+          <ol class="etapes">
+            <li>Dates</li>
+            <li>Matériel</li>
+            <li>Coordonnées</li>
+          </ol>
+          <div class="panneau">
+            <h3>Réservation en ligne</h3>
+            <p class="aide">Sur la page Gollut Sport de Skiset, choisissez vos dates de location, puis votre matériel. Vous préférez parler à quelqu'un ? Appelez le magasin.</p>
+            <div class="actions-etape">
+              <a href="tel:+41273064727" class="btn btn-ligne">Appeler le magasin</a>
+              <a href="https://www.skiset.com/station-ski/ovronnaz/magasins/gollut-sport" target="_blank" rel="noopener" class="btn btn-rouge">Réserver en ligne <span class="fl" aria-hidden="true">→</span></a>
+            </div>
+          </div>
+        </div>
+
+        <aside class="recap sombre" aria-label="Bon à savoir" data-reveal style="--d:.15s">
+          <h3>Bon à savoir</h3>
+          <p class="periode">Saison d'hiver</p>
+          <ul>
+            <li><span>Lieu de location<small>Route des Muverans 38, 1911 Ovronnaz</small></span><span>Ovronnaz</span></li>
+            <li><span>École de ski<small>Sur votre location avec les cours de ski</small></span><span>−10 %</span></li>
+            <li><span>Services de ski<small>Matériel déposé la veille avant 15 h</small></span><span>Le lendemain</span></li>
+            <li><span>Magic Pass<small>Gollut Sports est membre Be Magic · avantages [À CONFIRMER]</small></span><span>Membre</span></li>
+          </ul>
+          <p class="paiement">Tous les tarifs sont en francs suisses (CHF).</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="tarifs" id="tarifs">
+    <div class="wrap">
+      <div class="titre-section">
+        <p class="surtitre" data-reveal>Grille complète</p>
+        <h2 data-mots>Tarifs</h2>
+        <p data-reveal style="--d:.15s">Tarifs de location publiés sur gollut.ch (saison [À CONFIRMER]) et tarifs de l'atelier pour la saison 2025-2026. Prix en francs suisses (CHF), par personne.</p>
+      </div>
+      <div class="onglets" role="tablist" aria-label="Catégorie de tarifs" id="onglets-tarifs" data-reveal></div>
+      <div class="table-tarifs-wrap" role="tabpanel" tabindex="0" aria-label="Tableau des tarifs" data-reveal><table class="tarifs-table" id="table-tarifs"></table></div>
+      <p class="astuce-defilement" aria-hidden="true">Faites défiler le tableau horizontalement pour voir toutes les durées →</p>
+      <noscript><p class="sans-js">Le tableau des tarifs s'affiche avec JavaScript. Appelez-nous au <a href="tel:+41273064727">+41 27 306 47 27</a> pour connaître nos prix.</p></noscript>
+      <div class="bons-plans" data-cascade>
+        <div class="bon-plan"><strong>−<span data-compte="10">10</span> %</strong><p>Sur votre location avec les cours de ski de l'école.</p></div>
+        <div class="bon-plan"><strong>−<span data-compte="50">50</span> %</strong><p>Liquidation des skis et souliers de randonnée, et des souliers de télémark.</p></div>
+      </div>
+      <details class="cgl" id="conditions">
+        <summary>Conditions générales de location</summary>
+        <ul data-cgl></ul>
+      </details>
+    </div>
+  </section>
+
+  <section class="pourquoi" id="ecole">
+    <div class="wrap">
+      <div class="titre-section">
+        <p class="surtitre" data-reveal>École de ski</p>
+        <h2 data-mots>Des professeurs de ski au magasin</h2>
+        <p data-reveal style="--d:.15s">Gollut Sports est tenu par des professeurs de ski Swiss Snowsports. Suzy, directrice de l'école de ski, est votre contact au magasin.</p>
+      </div>
+      <div class="veloski" data-vu>
+        <div class="photo"><div class="parallaxe" data-parallaxe="0.1"><img src="images/ovronnaz-village.webp" width="1200" height="900" alt="Le village d'Ovronnaz sous la neige, vu depuis les pentes au-dessus de la station, avec la vallée du Rhône en contrebas" loading="lazy" decoding="async"></div></div>
+        <div class="texte" data-reveal="droite" style="--d:.2s">
+          <h3>Apprendre à skier à Ovronnaz</h3>
+          <p>Prenez vos cours avec l'école de ski et profitez de 10 % de rabais sur votre location chez Gollut Sports. Inscriptions et informations au magasin [À CONFIRMER].</p>
+          <div class="tarif-veloski">
+            <div><strong>−10 %</strong>Sur la location</div>
+            <div><strong>2 profs</strong>Swiss Snowsports</div>
+            <div><strong>42 ans</strong>D'enseignement</div>
+          </div>
+          <a href="tel:+41273064727" class="btn btn-rouge">Appeler le magasin <span class="fl" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="magasin" id="magasin">
+    <div class="wrap grille">
+      <div class="mosaique">
+        <!-- Photos du site officiel gollut.ch, recadrées et compressées -->
+        <figure data-vu><div class="parallaxe" data-parallaxe="0.07"><img src="images/magasin-skis.webp" width="1120" height="740" alt="Rangée de skis Atomic, Salomon et Head alignés dans des râteliers en bois, dans le magasin" loading="lazy" decoding="async"></div></figure>
+        <figure data-vu><img src="images/magasin-entree.webp" width="1067" height="800" alt="Entrée vitrée du magasin Gollut Sports, avec des skis et des chaussures exposés à l'intérieur" loading="lazy" decoding="async"></figure>
+        <figure data-vu><img src="images/magasin-location.webp" width="1200" height="675" alt="Skis de location Salomon suspendus sur leur rail, prêts à être loués" loading="lazy" decoding="async"></figure>
+        <figure data-vu><img src="images/magasin-vitrine.webp" width="1200" height="900" alt="Vitrine de Noël illuminée avec des skis anciens et récents, une photo d'époque et le logo de l'école de ski ESI" loading="lazy" decoding="async"></figure>
+        <figure data-vu><img src="images/magasin-bootfitting.webp" width="689" height="919" alt="Appareil de bootfitting avec une chaussure de ski Head dans une cloche transparente" loading="lazy" decoding="async"></figure>
+      </div>
+      <div class="texte">
+        <p class="surtitre" data-reveal>Le magasin</p>
+        <h2 data-mots>Since 1989, au cœur d'Ovronnaz</h2>
+        <p data-reveal>Gollut Sports vous accueille au centre de la station, à environ 1 km des pistes, pour la location, la vente et l'entretien de votre matériel. Plus qu'un magasin, c'est aussi un lieu de rencontre, avec son bar œnothèque.</p>
+        <div class="marques" aria-label="Marques proposées" data-cascade>
+          <span>[À CONFIRMER]</span>
+        </div>
+        <h3 data-reveal>En vente au magasin</h3>
+        <ul class="vente" data-reveal style="--d:.1s">
+          <li>Skis, snowboards, skis de fond</li>
+          <li>Raquettes à neige</li>
+          <li>Confection de ski, sous-vêtements thermiques</li>
+          <li>Lunettes et masques de ski</li>
+          <li>Gants, casques, bonnets</li>
+          <li>Bâtons de ski et de randonnée</li>
+          <li>Divers accessoires</li>
+        </ul>
+        <h3 data-reveal>Nos partenaires</h3>
+        <ul class="vente" data-reveal style="--d:.1s">
+          <li><a href="https://www.skiset.com/station-ski/ovronnaz/magasins/gollut-sport" target="_blank" rel="noopener">Skiset</a></li>
+          <li><a href="http://www.chalet4saisons.ch" target="_blank" rel="noopener">chalet4saisons.ch</a></li>
+          <li><a href="http://www.bains-ovronnaz.ch" target="_blank" rel="noopener">bains-ovronnaz.ch</a></li>
+          <li><a href="http://www.hoteldesmuverans.ch" target="_blank" rel="noopener">hoteldesmuverans.ch</a></li>
+          <li><a href="http://www.hotelardeve.ch" target="_blank" rel="noopener">hotelardeve.ch</a></li>
+          <li><a href="http://www.bainsdesaillon.ch" target="_blank" rel="noopener">bainsdesaillon.ch</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="infos sombre" id="infos">
+    <div class="wrap grille">
+      <div>
+        <p class="surtitre" data-reveal>Accès</p>
+        <h2 data-mots>Nous trouver</h2>
+        <dl data-cascade>
+          <div><dt>Téléphone</dt><dd><a class="tel" href="tel:+41273064727">+41 27 306 47 27</a><br>Mobile : <a href="tel:+41796439933">+41 79 643 99 33</a></dd></div>
+          <div><dt>E-mail</dt><dd><a href="mailto:farid@gollut.ch">farid@gollut.ch</a> [À CONFIRMER]</dd></div>
+          <div><dt>Adresse</dt><dd>Gollut Sports SA<br>Route des Muverans 38<br>1911 Ovronnaz (VS), Suisse</dd></div>
+          <div><dt>Repère</dt><dd>Au centre de la station d'Ovronnaz, à environ 1 km des pistes.</dd></div>
+          <div><dt>Horaires</dt><dd><ul class="horaires">
+            <li><span>Lundi à jeudi</span><span>8 h 30 – 12 h et 13 h 30 – 17 h</span></li>
+            <li><span>Vendredi et samedi</span><span>8 h 30 – 12 h et 13 h 30 – 17 h 30</span></li>
+            <li><span>Dimanche</span><span>8 h 30 – 12 h et 13 h 30 – 17 h</span></li>
+            <li><span>Hors saison</span><span>Samedi 9 h – 12 h et 14 h – 17 h</span></li>
+          </ul>Horaires d'hiver publiés sur gollut.ch, à vérifier pour la saison 2026-2027 [À CONFIRMER].</dd></div>
+          <div><dt>Réseaux</dt><dd><a href="https://www.facebook.com/farid.gollut" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.instagram.com/faridgollut/" target="_blank" rel="noopener">Instagram</a></dd></div>
+        </dl>
+      </div>
+      <div class="carte-geo" data-reveal="droite">
+        <iframe title="Plan d'accès à Gollut Sports, Ovronnaz" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://maps.google.com/maps?q=Gollut%20Sports%2C%20Route%20des%20Muverans%2038%2C%201911%20Ovronnaz&z=16&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pied">
+  <div class="wrap">
+    <p>© 2026 Gollut Sports, Ovronnaz</p>
+    <p>Réservation en ligne sur Skiset, partenaire de Gollut Sports.</p>
+    <p class="credits">Photos du magasin : site officiel <a href="https://gollut.ch/">gollut.ch</a>. Photos de paysage : « <a href="https://commons.wikimedia.org/wiki/File:Seya%27s_sight_toward_slopes_of_Ovronnaz_-_panoramio.jpg">Seya's sight toward slopes of Ovronnaz</a> » et « <a href="https://commons.wikimedia.org/wiki/File:Queu%27s_sight_toward_%22L%27Ard%C3%A8ve%22_-_panoramio.jpg">Queu's sight toward L'Ardève</a> », Picea Abies, <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.fr">CC BY-SA 3.0</a>, via Wikimedia Commons ; recadrées et compressées.</p>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+<script src="js/effets.js" onerror="document.documentElement.classList.remove('anim')"></script>
+</body>
+</html>
