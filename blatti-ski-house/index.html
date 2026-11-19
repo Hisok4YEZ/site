@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blatti Ski-House — Les Mosses, Alpes vaudoises</title>
+<meta name="description" content="Blatti Ski-House aux Mosses (VD), station de Les Mosses – La Lécherette : ski alpin et ski de fond. Téléphone +41 24 491 15 68.">
+<meta name="theme-color" content="#0F1E29">
+<meta property="og:title" content="Blatti Ski-House — Les Mosses, Alpes vaudoises">
+<meta property="og:description" content="Blatti Ski-House aux Mosses (VD), station de Les Mosses – La Lécherette : ski alpin et ski de fond. Téléphone +41 24 491 15 68.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_CH">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23D42A1D'/%3E%3Cpath d='M8 48l16-24 8 11 7-9 17 22z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700;9..40,800&family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>
+  /* Active les animations seulement si le navigateur les accepte. Si le script
+     d'effets ne se charge pas, la classe est retirée et tout reste visible. */
+  (function () {
+    var d = document.documentElement;
+    if ('IntersectionObserver' in window && 'requestAnimationFrame' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      d.classList.add('anim');
+      window.__secoursAnim = setTimeout(function () { d.classList.remove('anim'); }, 4000);
+    }
+  })();
+</script>
+</head>
+<body>
+
+<a class="lien-evitement" href="#contenu">Aller au contenu</a>
+<div class="progression" id="progression" aria-hidden="true"></div>
+
+<header class="entete" id="entete">
+  <div class="wrap">
+    <a href="#accueil" class="marque">Blatti <b>SKI-HOUSE</b></a>
+    <button class="bouton-menu" id="bouton-menu" aria-expanded="false" aria-controls="nav"><span class="barres" aria-hidden="true"></span><span class="txt">Menu</span></button>
+    <nav class="nav" id="nav" aria-label="Navigation principale">
+      <a href="#packs">Location</a>
+      <a href="#tarifs">Tarifs</a>
+      <a href="#magasin">Le magasin</a>
+      <a href="#infos">Accès</a>
+      <a href="#reserver" class="btn btn-rouge">Réserver</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenu">
+
+  <section class="accueil" id="accueil">
+    <div class="fond">
+      <div class="parallaxe" data-parallaxe="0.28" data-accueil>
+        <img src="images/banniere.webp" srcset="images/banniere-1100.webp 1100w, images/banniere.webp 2000w" sizes="100vw" width="2000" height="1125" alt="Sommets rocheux enneigés des Alpes vaudoises sous un ciel bleu" fetchpriority="high" decoding="async">
+      </div>
+    </div>
+    <div class="wrap contenu">
+      <p class="surtitre">Les Mosses · Alpes vaudoises</p>
+      <h1 data-mots>Le ski aux Mosses, <em>alpin et fond.</em></h1>
+      <p class="sous">Blatti Ski-House vous accueille aux Mosses, dans les Alpes vaudoises, sur la station de Les Mosses – La Lécherette, pour le ski alpin et le ski de fond.</p>
+      <form class="acces-rapide" id="acces-rapide" aria-label="Commencer une réservation">
+        <div>
+          <label for="ar-date">Premier jour</label>
+          <input class="champ" type="date" id="ar-date" required>
+        </div>
+        <div>
+          <label for="ar-duree">Durée</label>
+          <select class="champ" id="ar-duree">
+            <option value="am">½ journée (matin)</option>
+            <option value="pm">½ journée (après-midi)</option>
+            <option value="1">1 jour</option>
+            <option value="2">2 jours</option>
+            <option value="3">3 jours</option>
+            <option value="4">4 jours</option>
+            <option value="5">5 jours</option>
+            <option value="6" selected>6 jours</option>
+          </select>
+        </div>
+        <div>
+          <label for="ar-nb">Personnes</label>
+          <select class="champ" id="ar-nb">
+            <option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-rouge">Choisir le matériel <span class="fl" aria-hidden="true">→</span></button>
+      </form>
+    </div>
+    <svg class="cretes" viewBox="0 0 1440 64" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path fill="currentColor" d="M0 64V40l90-22 70 16 110-30 95 26 60-12 120 28 85-34 70 20 105-28 90 30 75-14 110 26 95-36 80 22 100-18 85 24v26z"/></svg>
+  </section>
+
+  <div class="bandeau-atouts">
+    <div class="wrap">
+      <ul data-cascade>
+        <li><strong><span data-compte="2">2</span><small>disciplines</small></strong>Ski alpin et ski de fond, station de Les Mosses – La Lécherette</li>
+        <li><strong>1862</strong>Les Mosses, dans les Alpes vaudoises (VD)</li>
+        <li><strong><span data-compte="1">1</span><small>appel</small></strong>Pour vous renseigner ou réserver : +41 24 491 15 68</li>
+        <li><strong>CHF</strong>Tarifs indicatifs — [À CONFIRMER] auprès du magasin</li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="pourquoi" id="pourquoi">
+    <div class="wrap">
+      <div class="titre-section">
+        <p class="surtitre" data-reveal>Bienvenue</p>
+        <h2 data-mots>Votre magasin de ski aux Mosses</h2>
+        <p data-reveal style="--d:.15s">Blatti Ski-House (aussi connu sous le nom de Blatti Sports) se trouve aux Mosses, sur la station de Les Mosses – La Lécherette, où se pratiquent le ski alpin et le ski de fond.</p>
+      </div>
+      <div class="atouts" data-cascade>
+        <article>
+          <h3>Ski alpin et ski de fond</h3>
+          <p>La station de Les Mosses – La Lécherette se prête aux deux disciplines. Matériel proposé au magasin : [À CONFIRMER].</p>
+        </article>
+        <article>
+          <h3>Location, vente et atelier</h3>
+          <p>Services, marques et entretien du matériel : [À CONFIRMER].</p>
+        </article>
+        <article>
+          <h3>Un appel suffit</h3>
+          <p>Pour connaître la disponibilité du matériel ou les horaires, appelez le magasin au <a href="tel:+41244911568">+41 24 491 15 68</a>.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="packs" id="packs">
+    <div class="wrap">
+      <div class="titre-section">
+        <p class="surtitre" data-reveal>Location</p>
+        <h2 data-mots>Choisissez votre pack</h2>
+        <p data-reveal style="--d:.15s">Tarifs indicatifs — [À CONFIRMER]. Un pack comprend les skis et les chaussures. Les prix ci-dessous sont pour une journée et pour six jours.</p>
+      </div>
+      <div class="onglets" role="tablist" aria-label="Type de pack" data-reveal>
+        <button type="button" role="tab" aria-selected="true" data-onglet="adulte">Adultes</button>
+        <button type="button" role="tab" aria-selected="false" data-onglet="enfant">Enfants</button>
+        <button type="button" role="tab" aria-selected="false" data-onglet="snow">Snowboard</button>
+      </div>
+      <div class="grille-packs" id="grille-packs" role="tabpanel" data-cascade></div>
+      <noscript><p class="sans-js">Les packs et les tarifs s'affichent avec JavaScript. Vous pouvez aussi nous appeler au <a href="tel:+41244911568">+41 24 491 15 68</a>.</p></noscript>
+
+      <div class="veloski" data-vu>
+        <div class="photo"><div class="parallaxe" data-parallaxe="0.1"><img src="images/piste.webp" width="1000" height="747" alt="Piste de ski damée et télésiège sous un ciel bleu" loading="lazy" decoding="async"></div></div>
+        <div class="texte" data-reveal="droite" style="--d:.2s">
+          <h3>Les Mosses – La Lécherette</h3>
+          <p>La station des Alpes vaudoises où se trouve le magasin, pour le ski alpin et le ski de fond. Une question sur le matériel ou les conditions ? Appelez-nous.</p>
+          <p><a href="tel:+41244911568" class="btn btn-rouge">Appeler le magasin <span class="fl" aria-hidden="true">→</span></a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reservation" id="reserver">
+    <div class="wrap">
+      <div class="titre-section">
+        <p class="surtitre" data-reveal>Réservation</p>
+        <h2 data-mots>Réservez votre matériel</h2>
+        <p data-reveal style="--d:.15s">Version de démonstration — aucune donnée n'est envoyée. Pour réserver, appelez le magasin au <a href="tel:+41244911568">+41 24 491 15 68</a>.</p>
+      </div>
+
+      <div class="resa" id="resa">
+        <div data-reveal>
+          <ol class="etapes" id="etapes">
+            <li class="actuelle">Séjour</li>
+            <li>Matériel</li>
+            <li>Coordonnées</li>
+          </ol>
+
+          <!-- Étape 1 -->
+          <div class="panneau" id="etape-1">
+            <span class="demo">Démonstration</span>
+            <h3>Quand venez-vous ?</h3>
+            <p class="aide">Les tarifs dégressifs s'appliquent aux journées entières et consécutives.</p>
+            <div class="groupe">
+              <label class="etiquette" for="r-date">Premier jour de location</label>
+              <input class="champ" type="date" id="r-date" style="max-width:280px">
+            </div>
+            <fieldset class="groupe">
+              <legend>Durée</legend>
+              <div class="puces" id="r-duree"></div>
+            </fieldset>
+            <p class="rappel-dates" id="r-rappel">Choisissez une date pour voir vos dates de location.</p>
+            <p class="erreur" id="erreur-1" role="alert" hidden></p>
+            <div class="actions-etape">
+              <a href="tel:+41244911568" class="btn btn-ligne">Appeler le magasin</a>
+              <button type="button" class="btn btn-rouge" id="vers-2">Continuer</button>
+            </div>
+          </div>
+
+          <!-- Étape 2 -->
+          <div class="panneau" id="etape-2" hidden>
+            <span class="demo">Démonstration</span>
+            <h3>Qui part sur les pistes ?</h3>
+            <p class="aide">Ajoutez chaque personne et son matériel. Taille, poids et pointure nous aident à préparer le bon réglage avant votre arrivée.</p>
+            <div id="skieurs"></div>
+            <button type="button" class="btn btn-ligne" id="ajouter-skieur">Ajouter une personne</button>
+            <p class="erreur" id="erreur-2" role="alert" hidden></p>
+            <div class="actions-etape">
+              <button type="button" class="btn btn-ligne" data-retour="1">Retour</button>
+              <button type="button" class="btn btn-rouge" id="vers-3">Continuer</button>
+            </div>
+          </div>
+
+          <!-- Étape 3 -->
+          <div class="panneau" id="etape-3" hidden>
+            <span class="demo">Démonstration</span>
+            <h3>Vos coordonnées</h3>
+            <p class="aide">Vérifiez votre réservation, puis indiquez comment vous joindre.</p>
+            <div class="resume-final" id="resume-final"></div>
+            <form id="form-contact" novalidate>
+              <div class="ligne-champs ligne-2" style="grid-template-columns:1fr 1fr">
+                <div><label for="c-prenom">Prénom</label><input class="champ" id="c-prenom" autocomplete="given-name" required></div>
+                <div><label for="c-nom">Nom</label><input class="champ" id="c-nom" autocomplete="family-name" required></div>
+              </div>
+              <div class="ligne-champs ligne-2" style="grid-template-columns:1fr; margin-top:12px">
+                <div><label for="c-tel">Téléphone</label><input class="champ" id="c-tel" type="tel" autocomplete="tel" required></div>
+              </div>
+              <div class="bloc-champ" style="margin-top:12px">
+                <label for="c-retrait">Heure de retrait du matériel</label>
+                <select class="champ" id="c-retrait" style="max-width:360px"></select>
+              </div>
+              <div class="bloc-champ" style="margin-top:12px">
+                <label for="c-message">Une précision pour l'équipe ? (facultatif)</label>
+                <textarea class="champ" id="c-message" placeholder="Niveau, taille, précisions sur le matériel…"></textarea>
+              </div>
+              <details class="cgl" id="cgl-resa">
+                <summary>Conditions générales de location</summary>
+                <ul data-cgl></ul>
+              </details>
+              <label class="case"><input type="checkbox" id="c-cgl" required> J'accepte les conditions générales de location</label>
+              <p class="erreur" id="erreur-3" role="alert" hidden></p>
+              <div class="actions-etape">
+                <button type="button" class="btn btn-ligne" data-retour="2">Retour</button>
+                <button type="submit" class="btn btn-rouge">Confirmer la réservation</button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Confirmation -->
+          <div class="panneau confirmation" id="etape-4" hidden aria-live="polite"></div>
+        </div>
+
+        <aside class="recap sombre" id="recap" aria-label="Récapitulatif de la réservation" data-reveal style="--d:.15s"></aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="tarifs" id="tarifs">
+    <div class="wrap">
+      <div class="titre-section">
+        <p class="surtitre" data-reveal>Grille complète</p>
+        <h2 data-mots>Tarifs</h2>
+        <p data-reveal style="--d:.15s"><strong>Tarifs indicatifs — [À CONFIRMER]</strong> auprès du magasin. Prix en francs suisses (CHF), par personne.</p>
+      </div>
+      <div class="onglets" role="tablist" aria-label="Catégorie de tarifs" id="onglets-tarifs" data-reveal></div>
+      <div class="table-tarifs-wrap" role="tabpanel" tabindex="0" aria-label="Tableau des tarifs" data-reveal><table class="tarifs-table" id="table-tarifs"></table></div>
+      <p class="astuce-defilement" aria-hidden="true">Faites défiler le tableau horizontalement pour voir toutes les durées →</p>
+      <noscript><p class="sans-js">Le tableau des tarifs s'affiche avec JavaScript. Appelez-nous au <a href="tel:+41244911568">+41 24 491 15 68</a> pour connaître nos prix.</p></noscript>
+      <details class="cgl" id="conditions">
+        <summary>Conditions générales de location</summary>
+        <ul data-cgl></ul>
+      </details>
+    </div>
+  </section>
+
+  <section class="magasin" id="magasin">
+    <div class="wrap grille">
+      <div class="mosaique">
+        <!-- PHOTOS PROVISOIRES (images neutres du modèle) : à remplacer par les vraies photos de Blatti Ski-House (mêmes noms de fichiers, format 4:3) -->
+        <figure data-vu><div class="parallaxe" data-parallaxe="0.07"><img src="images/magasin-1.webp" width="667" height="500" alt="Comptoir en bois avec, derrière, un mur de masques et de casques de ski" loading="lazy" decoding="async"></div></figure>
+        <figure data-vu><img src="images/magasin-3.webp" width="667" height="500" alt="Rangées de skis et de snowboards sous une charpente en bois" loading="lazy" decoding="async"></figure>
+        <figure data-vu><img src="images/magasin-4.webp" width="667" height="500" alt="Casques de toutes les couleurs accrochés à une cloison en bois" loading="lazy" decoding="async"></figure>
+      </div>
+      <div class="texte">
+        <p class="surtitre" data-reveal>Le magasin</p>
+        <h2 data-mots>Blatti Ski-House, aux Mosses</h2>
+        <p data-reveal>Le magasin se trouve aux Mosses (VD), sur la station de Les Mosses – La Lécherette. Marques, articles en vente et ouverture en été : [À CONFIRMER].</p>
+        <div class="marques" aria-label="Marques proposées" data-cascade>
+          <span>[À CONFIRMER]</span>
+        </div>
+        <h3 data-reveal>Aussi en vente au magasin</h3>
+        <ul class="vente" data-reveal style="--d:.1s">
+          <li>[À CONFIRMER]</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="infos sombre" id="infos">
+    <div class="wrap grille">
+      <div>
+        <p class="surtitre" data-reveal>Accès</p>
+        <h2 data-mots>Nous trouver</h2>
+        <dl data-cascade>
+          <div><dt>Téléphone</dt><dd><a class="tel" href="tel:+41244911568">+41 24 491 15 68</a></dd></div>
+          <div><dt>Adresse</dt><dd>Chemin des Plans [À CONFIRMER — un annuaire indique « Ch. de Lioson 8 »]<br>1862 Les Mosses (VD), Suisse</dd></div>
+          <div><dt>Repère</dt><dd>Station de Les Mosses – La Lécherette, dans les Alpes vaudoises.</dd></div>
+          <div><dt>Horaires</dt><dd><ul class="horaires">
+            <li><span>Hiver</span><span>[À CONFIRMER]</span></li>
+            <li><span>Été</span><span>[À CONFIRMER]</span></li>
+          </ul></dd></div>
+        </dl>
+      </div>
+      <div class="carte-geo" data-reveal="droite">
+        <iframe title="Plan d'accès à Blatti Ski-House, Les Mosses" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://maps.google.com/maps?q=Blatti%20Ski-House%2C%20Chemin%20des%20Plans%2C%201862%20Les%20Mosses&z=15&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pied">
+  <div class="wrap">
+    <p>© 2026 Blatti Ski-House, Les Mosses</p>
+    <p>Réservation en ligne : version de démonstration — aucune donnée n'est envoyée.</p>
+    <p class="credits">Photos de paysage : « <a href="https://commons.wikimedia.org/wiki/File:Tours_d%27A%C3%AF_et_de_Mayen.jpg">Tours d'Aï et de Mayen</a> », Christian David, <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr">CC BY-SA 4.0</a> ; « <a href="https://commons.wikimedia.org/wiki/File:Ski_day_in_Leysin.JPG">Ski day in Leysin</a> », Noxabby, <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.fr">CC BY-SA 3.0</a> ; via Wikimedia Commons, recadrées et compressées.</p>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+<script src="js/effets.js" onerror="document.documentElement.classList.remove('anim')"></script>
+</body>
+</html>
